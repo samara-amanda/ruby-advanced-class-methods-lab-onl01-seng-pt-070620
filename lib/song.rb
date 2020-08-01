@@ -52,7 +52,7 @@ class Song
     parts[1] = parts[1].chomp(".mp3")
     song = self.new
     song.name = parts[1]
-    song.artist = parts[0]
+    song.artist_name = parts[0]
     return song
   end
 
