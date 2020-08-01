@@ -52,8 +52,8 @@ class Song
     parts = song.split(" - ")
     parts = song.split(".mp3")
     song.name = name
-    name_of_song = song.name[0]
-    song_artist = song[1]
+    name_of_song = parts[0]
+    song_artist = parts2[1]
     return name_of_song
   end
 
