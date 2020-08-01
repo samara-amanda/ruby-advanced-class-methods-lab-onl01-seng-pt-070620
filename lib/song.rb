@@ -53,7 +53,7 @@ class Song
     song = self.new
     song.name = parts[1]
     song.artist = parts[0]
-    return name_of_song
+    return song
   end
 
 
