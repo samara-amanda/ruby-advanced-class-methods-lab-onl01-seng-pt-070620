@@ -60,7 +60,7 @@ class Song
     song = self.new
     song.name = parts[1]
     song.artist_name = parts[0]
-    song = "#{parts[0]  + parts[1]}"
+    song = "#{parts[0] + parts[1]}"
     return song
   end
 
