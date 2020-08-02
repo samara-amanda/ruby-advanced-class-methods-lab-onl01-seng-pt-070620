@@ -58,9 +58,9 @@ class Song
 
   def self.create_from_filename(name)
     song = self.new
-    song.name = parts[1]
-    song.artist_name = parts[0]
-    song = "#{parts[0] + parts[1]}"
+    song.name = name
+    song.artist_name = artist
+    song = "#{artist} + #{name}"
     return song
   end
 
