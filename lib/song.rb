@@ -48,13 +48,24 @@ class Song
   end
 
   def self.new_from_filename(name)
+    parts = name.split(" - ")
+    parts[1] = parts[1].chomp(".mp3")
     song = self.new
-    song.split(" - ")
-    song.split(".mp3")
-    song.name = name
-    name_of_song = song.name[0]
-    song_artist = song[1]
-    return name_of_song
+    song.name = parts[1]
+    song.artist_name = parts[0]
+    return song
+  end
+
+  def self.create_from_filename(filename)
+    result = self.new_from_filename(filename)
+    song = self.create
+    song.name = result.name
+    song.artist_name = result.artist_name
+    return song
+  end
+
+  def self.destroy_all
+    self.all.clear
   end
 
 
