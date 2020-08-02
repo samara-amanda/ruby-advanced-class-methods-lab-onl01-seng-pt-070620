@@ -60,7 +60,7 @@ class Song
     song = self.new
     song.name = name
     song.artist_name = artist_name
-    return song
+    return song = self.new_from_file(name)
   end
 
 
