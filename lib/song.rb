@@ -60,8 +60,6 @@ class Song
     song = self.new
     song.name = parts[1]
     song.artist_name = parts[0]
-    parts[0].push(" - ")
-    parts[1].push(".mp3")
     return song
   end
 
