@@ -60,7 +60,6 @@ class Song
     song = self.new
     song.name = name
     song.artist_name = artist
-    song = "#{artist} + #{name}"
     return song
   end
 
